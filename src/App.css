@@ -1,0 +1,85 @@
+body {
+  font-family: 'Chivo', sans-serif;
+  font-size: 14pt;
+  font-weight: lighter;
+  color: #080808;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Stellar', sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 5em;
+  margin: 0.2em;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #101010;
+  margin: 0.5em;
+}
+
+a:hover {
+  color: gray;
+}
+
+.top-bar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+}
+
+.top-bar {
+  margin: 1em;
+  position: relative;
+}
+
+.top-bar ul{
+  list-style: none;
+  display: inline;
+  float: right;
+  margin: 0;
+}
+
+.top-bar li {
+  display: inline;
+}
+
+.brand-logo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  width: 3%;
+}
+
+.support-text {
+  margin: 0 0.5em;
+  text-align: center;
+}
+
+.main-body {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.preface-container {
+  margin-top: 8em;
+}
+
+.gallery-grid {
+  margin-top: 5em;
+}
+
+.responsive-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
