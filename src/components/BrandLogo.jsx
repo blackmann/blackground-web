@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 
+
 class BrandLogo extends Component {
 
     render() {
@@ -14,6 +15,10 @@ class BrandLogo extends Component {
 </svg>
             </div>
         )
+    }
+
+    componentDidMount() {
+
     }
 }
 

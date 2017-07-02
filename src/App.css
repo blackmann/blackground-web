@@ -30,9 +30,12 @@ a:hover {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  right: 0;
+  width: 95%;
   z-index: 1000;
   background-color: white;
+  margin: auto;
+  padding-top: 1.4em;
 }
 
 .top-bar {
@@ -44,7 +47,7 @@ a:hover {
   list-style: none;
   display: inline;
   float: right;
-  margin: 0;
+  margin: 0 1.5em;
 }
 
 .top-bar li {
@@ -57,7 +60,8 @@ a:hover {
   right: 0;
   top: 0;
   margin: auto;
-  width: 3%;
+  width: 40px;
+  opacity: 0.7;
 }
 
 .support-text {
@@ -66,12 +70,12 @@ a:hover {
 }
 
 .main-body {
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
 }
 
 .preface-container {
-  margin-top: 8em;
+  margin-top: 9em;
 }
 
 .gallery-grid {
@@ -82,4 +86,38 @@ a:hover {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
+}
+
+.meta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 2em;
+}
+
+.meta h4, h3 {
+  line-height: 0.2em;
+}
+
+.meta h4 {
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.meta-transition-enter {
+  opacity: 0.1;
+}
+
+.meta-transition-enter.meta-transition-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.meta-transition-leave {
+  opacity: 1;
+}
+
+.meta-transition-leave.meta-transition-leave-active {
+  opacity: 0;
+  transition: opacity 300ms ease-in;
 }

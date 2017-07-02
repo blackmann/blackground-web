@@ -18,7 +18,7 @@ class Graphic extends Component {
 
 
 Graphic.propTypes = {
-    imageSrc: PropTypes.object.isRequired
+    imageSrc: PropTypes.string.isRequired
 };
 
 export default Graphic
