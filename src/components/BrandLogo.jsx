@@ -16,10 +16,6 @@ class BrandLogo extends Component {
             </div>
         )
     }
-
-    componentDidMount() {
-
-    }
 }
 
 export default BrandLogo

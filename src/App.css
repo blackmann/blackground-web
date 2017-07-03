@@ -1,7 +1,7 @@
 body {
   font-family: 'Chivo', sans-serif;
   font-size: 14pt;
-  font-weight: lighter;
+  font-weight: normal;
   color: #080808;
 }
 
@@ -16,7 +16,7 @@ h1 {
   text-align: center;
 }
 
-a {
+a, .link {
   text-decoration: none;
   color: #101010;
   margin: 0.5em;
@@ -35,7 +35,7 @@ a:hover {
   z-index: 1000;
   background-color: white;
   margin: auto;
-  padding-top: 1.4em;
+  padding-top: 0.8em;
 }
 
 .top-bar {
@@ -55,13 +55,9 @@ a:hover {
 }
 
 .brand-logo {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  margin: auto;
+  margin: 0.5em;
   width: 40px;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 .support-text {
@@ -82,7 +78,7 @@ a:hover {
   margin-top: 5em;
 }
 
-.responsive-image {
+.responsive-image, .fit {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
@@ -120,4 +116,30 @@ a:hover {
 .meta-transition-leave.meta-transition-leave-active {
   opacity: 0;
   transition: opacity 300ms ease-in;
+}
+
+.active-tab {
+  margin: 4px;
+  -webkit-animation-name: AnimationActiveTab;
+  -moz-animation-name: AnimationActiveTab;
+  -o-animation-name: AnimationActiveTab;
+  animation-name: AnimationActiveTab;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background-color: #1BBC9B;
+  height: 4px;
+  border-radius: 1px;
+}
+
+@keyframes AnimationActiveTab {
+  from {
+    margin-left: 4px;
+    margin-right:4px;
+  }
+
+  to {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
 }
