@@ -6,11 +6,14 @@ import PropTypes from "prop-types";
 class Link extends Component {
 
     render() {
+        let _link = <a onClick={this.props.onClick}
+                   href={this.props.linkAnchor}>{this.props.linkName || this.props.linkAnchor}</a>;
+
         return (
             <Row center="xs" className="link">
                 <Col>
-                <a href={this.props.linkAnchor}>{this.props.linkName || this.props.linkAnchor}</a><br/>
-                {this.props.isActive && <ActiveUnderline/>}
+                    {_link}<br/>
+                    {this.props.isActive && <ActiveUnderline/>}
                 </Col>
             </Row>
         );

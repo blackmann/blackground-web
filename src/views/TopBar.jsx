@@ -3,9 +3,19 @@ import Link from "../components/Link";
 import {Row, Col, Grid} from "react-flexbox-grid";
 import "../App.css";
 import BrandLogo from "../components/BrandLogo";
+import PropTypes from "prop-types";
 
 class TopBar extends Component {
 
+    constructor(props) {
+        super(props);
+        this.toggleMenu = this.toggleMenu.bind(this);
+    }
+
+    toggleMenu() {
+        console.log("received input");
+        this.props.toggle();
+    }
 
     render() {
         return (
@@ -28,7 +38,7 @@ class TopBar extends Component {
 
                             <div className="mobile-navigation">
                                 <Row center="xs">
-                                    <Link linkName="Menu"/>
+                                    <Link linkName="Menu" onClick={this.toggleMenu}/>
                                 </Row>
                             </div>
                         </Col>
@@ -50,5 +60,9 @@ class TopBar extends Component {
         );
     }
 }
+
+TopBar.propTypes = {
+    toggle: PropTypes.func.isRequired
+};
 
 export {TopBar}
