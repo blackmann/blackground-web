@@ -1,22 +1,50 @@
 import React, {Component} from "react";
 import Graphic from "./Graphic";
-import StackGrid from "react-stack-grid";
+import {Row, Col} from "react-flexbox-grid";
 import PropTypes from "prop-types";
+
 
 class PhotoGrid extends Component {
 
+    getCol(position) {
+        return (
+            <Col md>
+                <Graphic imageSrc={this.props.photos[position].image}/>
+            </Col>
+        )
+    }
+
     renderGallery() {
-        return this.props.photos.map((item, index) => {
-            return <Graphic imageSrc={item.image} key={index}/>
-        })
+        let views = [];
+        let photosCount = this.props.photos.length;
+        for (var i = 0; i < photosCount; i++) {
+            // create row containing just two elements
+            let firstColumn = this.getCol(i++);
+
+            let secondColumn = <Col xs/>;
+
+            if (i< photosCount) {
+                secondColumn = this.getCol(i)
+            }
+
+            let row =
+                (<Row key={i}>
+                    {firstColumn}
+                    {secondColumn}
+                </Row>);
+
+            views.push(row);
+        }
+
+        return views;
     }
 
 
     render() {
         return (
-            <StackGrid columnWidth="50%" className="gallery-grid">
+            <div className="gallery-grid">
                 {this.renderGallery()}
-            </StackGrid>
+            </div>
         )
     }
 }

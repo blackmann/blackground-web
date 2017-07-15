@@ -120,26 +120,7 @@ a:hover {
 
 .active-tab {
   margin: 4px;
-  -webkit-animation-name: AnimationActiveTab;
-  -moz-animation-name: AnimationActiveTab;
-  -o-animation-name: AnimationActiveTab;
-  animation-name: AnimationActiveTab;
-  animation-duration: 1.2s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
   background-color: #1BBC9B;
-  height: 4px;
+  height: 2px;
   border-radius: 1px;
-}
-
-@keyframes AnimationActiveTab {
-  from {
-    margin-left: 4px;
-    margin-right:4px;
-  }
-
-  to {
-    margin-left: 30px;
-    margin-right: 30px;
-  }
 }

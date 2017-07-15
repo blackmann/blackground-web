@@ -14,7 +14,7 @@ class TopBar extends Component {
                     <Row>
                         <Col xs={4}>
                             <Row start="xs">
-                                <a>About us</a>
+                                <Link linkAnchor="about" linkName="About us"/>
                             </Row>
                         </Col>
                         <Col xs={4}>
@@ -25,10 +25,10 @@ class TopBar extends Component {
                         <Col xs={4}>
                             <Row end="xs">
                                 <Col>
-                                    <Link linkAnchor="gallery" linkName="Gallery" isActive={true}/>
+                                    <Link linkAnchor="logos" linkName="Logos" isActive={true}/>
                                 </Col>
                                 <Col>
-                                    <Link linkAnchor="portfolio" linkName="Portfolio"/>
+                                    <Link linkAnchor="graphics" linkName="Graphics"/>
                                 </Col>
                             </Row>
                         </Col>
