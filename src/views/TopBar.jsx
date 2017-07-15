@@ -14,23 +14,35 @@ class TopBar extends Component {
                     <Row>
                         <Col xs={4}>
                             <Row start="xs">
-                                <Link linkAnchor="about" linkName="About us"/>
+                                <div className="navigation">
+                                    <Link linkAnchor="about" linkName="About us"/>
+                                </div>
                             </Row>
                         </Col>
                         <Col xs={4}>
-                            <Row center="xs">
-                                <BrandLogo/>
-                            </Row>
+                            <div className="navigation">
+                                <Row center="xs">
+                                    <BrandLogo/>
+                                </Row>
+                            </div>
+
+                            <div className="mobile-navigation">
+                                <Row center="xs">
+                                    <Link linkName="Menu"/>
+                                </Row>
+                            </div>
                         </Col>
                         <Col xs={4}>
-                            <Row end="xs">
-                                <Col>
-                                    <Link linkAnchor="logos" linkName="Logos" isActive={true}/>
-                                </Col>
-                                <Col>
-                                    <Link linkAnchor="graphics" linkName="Graphics"/>
-                                </Col>
-                            </Row>
+                            <div className="navigation">
+                                <Row end="md">
+                                    <Col>
+                                        <Link linkAnchor="logos" linkName="Logos" isActive={true}/>
+                                    </Col>
+                                    <Col>
+                                        <Link linkAnchor="graphics" linkName="Graphics"/>
+                                    </Col>
+                                </Row>
+                            </div>
                         </Col>
                     </Row>
                 </Grid>

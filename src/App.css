@@ -124,3 +124,33 @@ a:hover {
   height: 2px;
   border-radius: 1px;
 }
+
+.mobile-navigation {
+  display: none;
+}
+
+@media (max-width: 425px) {
+  .navigation {
+    display: none;
+  }
+
+  .meta {
+    display: none;
+  }
+
+  .mobile-navigation {
+    display: block;
+  }
+
+  .main-body {
+    width: 80%
+  }
+
+  .preface-container {
+    margin-top: 7em;
+  }
+
+  .preface-container h1 {
+    font-size: 3em;
+  }
+}
