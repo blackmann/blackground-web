@@ -1,19 +1,16 @@
 import React, {Component} from "react";
 import Dock from "react-dock";
-import {Row, Col, Grid} from "react-flexbox-grid";
+import {Col, Grid, Row} from "react-flexbox-grid";
 import BrandLogo from "../components/BrandLogo";
 import Link from "../components/Link";
 import ImageLink from "../components/ImageLink";
 import PropTypes from "prop-types";
 
-import fbIcon from "../gallery/fb.png";
-import twitterIcon from "../gallery/twitter.png";
-import instagramIcon from "../gallery/instagram.png";
-import behanceIcon from "../gallery/behance.png";
+import socialAccounts from "../resources/social-accounts";
 
 class MobileMenu extends Component {
 
-    getRow(child) {
+    static getRow(child) {
         return (
             <Row>
                 <Col xs={12}>
@@ -25,36 +22,39 @@ class MobileMenu extends Component {
         );
     }
 
-    getImageLink(icon, anchor) {
+    static getImageLink(icon, anchor, index) {
         return (
-            <Col xs>
+            <Col xs key={index}>
                 <ImageLink image={icon} linkAnchor={anchor}/>
             </Col>
         );
+    }
+
+    static getSocialLinks() {
+        return socialAccounts.map((item, index) => {
+            return MobileMenu.getImageLink(item.icon, item.href, index)
+        })
     }
 
     render() {
         return (
             <Dock fluid={true} size={0.8} position="top" isVisible={this.props.toggled}>
                 <Grid fluid className="mobile-navigation-container">
-                    {this.getRow(<BrandLogo/>)}
+                    {MobileMenu.getRow(<BrandLogo/>)}
 
-                    {this.getRow(<Link linkAnchor="about" linkName="About"/>)}
-                    {this.getRow(<Link linkAnchor="logos" linkName="Logos"/>)}
-                    {this.getRow(<Link linkAnchor="graphics" linkName="Graphics"/>)}
-                    {this.getRow(<Link linkAnchor="hire" linkName="Hire us"/>)}
+                    {MobileMenu.getRow(<Link linkAnchor="about" linkName="About"/>)}
+                    {MobileMenu.getRow(<Link linkAnchor="logos" linkName="Logos"/>)}
+                    {MobileMenu.getRow(<Link linkAnchor="graphics" linkName="Graphics"/>)}
+                    {MobileMenu.getRow(<Link linkAnchor="hire" linkName="Hire us"/>)}
 
                     <div className="social-icons-container">
                         <Row>
-                            {this.getImageLink(fbIcon, "http://facebook.com/blackgroundofficial")}
-                            {this.getImageLink(instagramIcon, "http://instagram.com/blackgroundlabs")}
-                            {this.getImageLink(twitterIcon, "http://twitter.com/blackgroundlabs")}
-                            {this.getImageLink(behanceIcon, "")}
+                            {MobileMenu.getSocialLinks()}
                         </Row>
                     </div>
 
                     <div className="dock-exit">
-                        {this.getRow(<a onClick={this.props.toggleMenu}>Close Menu</a>)}
+                        {MobileMenu.getRow(<a onClick={this.props.toggleMenu}>Close Menu</a>)}
                     </div>
                 </Grid>
             </Dock>

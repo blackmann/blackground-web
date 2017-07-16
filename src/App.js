@@ -6,6 +6,7 @@ import MainBody from "./views/MainBody";
 import metalist from "./resources/metalist";
 import MetaContent from "./views/MetaContent";
 import MobileMenu from "./views/MobileMenu";
+import Social from "./components/Social";
 
 class App extends Component {
 
@@ -28,6 +29,7 @@ class App extends Component {
                 <TopBar toggle={this.toggleMobileNav}/>
                 <MainBody/>
                 <MetaContent metaList={metalist}/>
+                <Social/>
             </div>
         );
     }
