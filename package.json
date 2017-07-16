@@ -16,7 +16,8 @@
     "react-sizeme": "^2.3.4",
     "react-svg-inline": "^2.0.0",
     "react-visibility-sensor": "^3.10.0",
-    "signal-exit": "^3.0.2"
+    "signal-exit": "^3.0.2",
+    "styled-components": "^2.1.1"
   },
   "devDependencies": {
     "react-scripts": "1.0.10"

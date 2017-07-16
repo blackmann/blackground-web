@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {TopBar} from './views/TopBar'
 import './App.css';
+import './global';
 import MainBody from "./views/MainBody";
 import metalist from "./resources/metalist";
 import MetaContent from "./views/MetaContent";
