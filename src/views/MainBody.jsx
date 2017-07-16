@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import PhotoGrid from "../components/PhotoGrid";
-import graphics from "../resources/graphics";
+import {logos} from "../resources/graphics";
 
 class MainBody extends Component {
 
@@ -12,7 +12,7 @@ class MainBody extends Component {
                     <p className="support-text">Let us do it right for you. And be surprised.</p>
                 </div>
 
-                <PhotoGrid photos={graphics}/>
+                <PhotoGrid photos={this.props.images || logos}/>
             </div>
         )
     }

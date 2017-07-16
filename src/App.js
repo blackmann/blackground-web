@@ -10,6 +10,8 @@ import MobileMenu from "./views/MobileMenu";
 import Social from "./components/Social";
 import {Switch, Route} from "react-router-dom";
 
+import {logos, graphics} from "./resources/graphics";
+
 class App extends Component {
 
     constructor(props) {
@@ -25,14 +27,17 @@ class App extends Component {
 
 
     render() {
+        let logosPage = <MainBody images={logos}/>;
+        let graphicsPage = <MainBody images={graphics}/>;
         return (
             <div>
                 <MobileMenu toggleMenu={this.toggleMobileNav} toggled={this.state.mobileNavOpen}/>
                 <TopBar toggle={this.toggleMobileNav}/>
                 <Switch>
                     <Route exact path="/" component={MainBody}/>
-                    <Route exact path="/logos" component={MainBody}/>
+                    <Route exact path="/logos" children={logosPage}/>
                     <Route exact path="/about" component={About}/>
+                    <Route exact path="/graphics" children={graphicsPage}/>
                 </Switch>
                 <MetaContent metaList={metalist}/>
                 <Social/>
