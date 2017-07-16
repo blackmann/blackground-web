@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f5fb9d0-746b-4a78-9eeb-e65d1a68f7ba" name="Default" comment="Corruption occurred. Checkpoint.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.css" afterPath="$PROJECT_DIR$/src/App.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/team.jsx" afterPath="$PROJECT_DIR$/src/resources/team.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/About.jsx" afterPath="$PROJECT_DIR$/src/views/About.jsx" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,7 +35,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainBody.jsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainBody.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/MainBody.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -59,11 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="team.jsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="team.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/resources/team.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+            <state relative-caret-position="255">
+              <caret line="15" column="95" lean-forward="false" selection-start-line="15" selection-start-column="95" selection-end-line="15" selection-end-column="95" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -132,9 +130,9 @@
         <option value="$PROJECT_DIR$/src/components/Link.jsx" />
         <option value="$PROJECT_DIR$/src/views/TopBar.jsx" />
         <option value="$PROJECT_DIR$/src/views/MobileMenu.jsx" />
-        <option value="$PROJECT_DIR$/src/resources/team.jsx" />
         <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/views/About.jsx" />
+        <option value="$PROJECT_DIR$/src/resources/team.jsx" />
       </list>
     </option>
   </component>
@@ -404,12 +402,12 @@
       <workItem from="1500107347668" duration="11499000" />
       <workItem from="1500122605500" duration="2039000" />
       <workItem from="1500164221357" duration="5097000" />
-      <workItem from="1500193999411" duration="13848000" />
+      <workItem from="1500193999411" duration="14042000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77198000" />
+    <option name="totallyTimeSpent" value="77392000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -833,16 +831,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/team.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -867,6 +855,16 @@
           <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/team.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="95" lean-forward="false" selection-start-line="15" selection-start-column="95" selection-end-line="15" selection-end-column="95" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
           </folding>
         </state>
       </provider>

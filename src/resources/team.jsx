@@ -12,8 +12,8 @@ let teams = [
     {
         profileImage: pierre,
         name: "Alli Pierre Yotti",
-        position: "Senior Partner",
-        bio: "The great web and software engineer over here."
+        position: "Senior Software Engineer",
+        bio: "The great web and software engineer over here. He does the engineering over here."
     }
 ];
 
