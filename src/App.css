@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Stellar";
+  src: local("Stellar"), url(./fonts/Stellar_Bold.otf) format("otf");
+}
+
 body {
   font-family: 'Chivo', sans-serif;
   font-size: 14pt;
