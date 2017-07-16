@@ -37,8 +37,26 @@ class About extends Component {
         return (
             <div className="main-body">
                 <div className="preface-container">
+                    <h1>About us</h1>
+                    <p><strong>Blackground Labs</strong> is a team of creative designers that focuses
+                        on providing quality branding services for start-ups. We offer the best of
+                        graphics design and software solutions with enterprise standards. We are currently
+                     located in Germany and Ghana, but our services are provided internationally.</p>
                     <img alt="" className="responsive-image" src={blackground}/>
-                    <h1>We are a team of Creative Designers</h1>
+                    <h1>What we do</h1>
+                    <Row center="xs">
+                        <Col>
+                        <ul>
+                            <li>Graphic Design</li>
+                            <li>Logo & Branding</li>
+                            <li>Web Design</li>
+                            <li>Product Packaging</li>
+                            <li>Mobile Applications</li>
+                            <li>Desktop Application</li>
+                        </ul>
+                        </Col>
+                    </Row>
+                    <h1>The Team</h1>
                     <Grid fluid>
                         {About.getProfilesView()}
                     </Grid>

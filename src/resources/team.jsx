@@ -1,4 +1,5 @@
-import degreat from "../gallery/degreat.png"
+import degreat from "../gallery/degreat.png";
+import pierre from "../gallery/pierre.JPG";
 
 
 let teams = [
@@ -9,7 +10,7 @@ let teams = [
         bio: "He manages the design process. Makes sure everything is done right to the tiny detail."
     },
     {
-        profileImage: degreat,
+        profileImage: pierre,
         name: "Alli Pierre Yotti",
         position: "Senior Partner",
         bio: "The great web and software engineer over here."
