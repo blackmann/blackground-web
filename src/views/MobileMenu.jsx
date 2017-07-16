@@ -42,10 +42,10 @@ class MobileMenu extends Component {
                 <Grid fluid className="mobile-navigation-container">
                     {MobileMenu.getRow(<BrandLogo/>)}
 
-                    {MobileMenu.getRow(<Link linkAnchor="/about" linkName="About"/>)}
-                    {MobileMenu.getRow(<Link linkAnchor="/logos" linkName="Logos"/>)}
-                    {MobileMenu.getRow(<Link linkAnchor="/graphics" linkName="Graphics"/>)}
-                    {MobileMenu.getRow(<Link linkAnchor="/hire" linkName="Hire us"/>)}
+                    {MobileMenu.getRow(<Link onClick={this.props.toggleMenu} linkAnchor="/about" linkName="About"/>)}
+                    {MobileMenu.getRow(<Link onClick={this.props.toggleMenu} linkAnchor="/logos" linkName="Logos"/>)}
+                    {MobileMenu.getRow(<Link onClick={this.props.toggleMenu} linkAnchor="/graphics" linkName="Graphics"/>)}
+                    {MobileMenu.getRow(<Link onClick={this.props.toggleMenu} linkAnchor="/hire" linkName="Hire us"/>)}
 
                     <div className="social-icons-container">
                         <Row>
