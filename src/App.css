@@ -162,6 +162,10 @@ a:hover {
   height: 40px;
 }
 
+.active-link {
+  border-bottom: solid 2px;
+  border-bottom-color: #1bbc9b;
+}
 
 @media (max-width: 750px) {
   .navigation {

@@ -3,10 +3,12 @@ import {TopBar} from './views/TopBar'
 import './App.css';
 import './global';
 import MainBody from "./views/MainBody";
+import About from "./views/About"
 import metalist from "./resources/metalist";
 import MetaContent from "./views/MetaContent";
 import MobileMenu from "./views/MobileMenu";
 import Social from "./components/Social";
+import {Switch, Route} from "react-router-dom";
 
 class App extends Component {
 
@@ -27,7 +29,11 @@ class App extends Component {
             <div>
                 <MobileMenu toggleMenu={this.toggleMobileNav} toggled={this.state.mobileNavOpen}/>
                 <TopBar toggle={this.toggleMobileNav}/>
-                <MainBody/>
+                <Switch>
+                    <Route exact path="/" component={MainBody}/>
+                    <Route exact path="/logos" component={MainBody}/>
+                    <Route exact path="/about" component={About}/>
+                </Switch>
                 <MetaContent metaList={metalist}/>
                 <Social/>
             </div>

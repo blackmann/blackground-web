@@ -15,7 +15,7 @@ class ImageLink extends Component {
 }
 
 ImageLink.propTypes = {
-    image: PropTypes.object.isRequired,
+    image: PropTypes.string.isRequired,
     linkAnchor: PropTypes.string
 }
 

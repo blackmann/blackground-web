@@ -25,7 +25,7 @@ class TopBar extends Component {
                         <Col xs={4}>
                             <Row start="xs">
                                 <div className="navigation">
-                                    <Link linkAnchor="about" linkName="About us"/>
+                                    <Link linkAnchor="/about" linkName="About us"/>
                                 </div>
                             </Row>
                         </Col>
@@ -38,7 +38,7 @@ class TopBar extends Component {
 
                             <div className="mobile-navigation">
                                 <Row center="xs">
-                                    <Link linkName="Menu" onClick={this.toggleMenu}/>
+                                    <a onClick={this.toggleMenu}>Menu</a>
                                 </Row>
                             </div>
                         </Col>
@@ -46,10 +46,10 @@ class TopBar extends Component {
                             <div className="navigation">
                                 <Row end="md">
                                     <Col>
-                                        <Link linkAnchor="logos" linkName="Logos" isActive={true}/>
+                                        <Link linkAnchor="/logos" linkName="Logos"/>
                                     </Col>
                                     <Col>
-                                        <Link linkAnchor="graphics" linkName="Graphics"/>
+                                        <Link linkAnchor="/graphics" linkName="Graphics"/>
                                     </Col>
                                 </Row>
                             </div>
@@ -62,7 +62,8 @@ class TopBar extends Component {
 }
 
 TopBar.propTypes = {
-    toggle: PropTypes.func.isRequired
+    toggle: PropTypes.func.isRequired,
+    currentLocation: PropTypes.string
 };
 
 export {TopBar}

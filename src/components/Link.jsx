@@ -1,19 +1,19 @@
 import React, {Component} from "react";
-import {Row, Col} from "react-flexbox-grid";
-import ActiveUnderline from "./ActiveUnderline";
+import {Col, Row} from "react-flexbox-grid";
+import {NavLink} from "react-router-dom";
 import PropTypes from "prop-types";
+
 
 class Link extends Component {
 
     render() {
-        let _link = <a onClick={this.props.onClick}
-                   href={this.props.linkAnchor}>{this.props.linkName || this.props.linkAnchor}</a>;
+        let _link = <NavLink onClick={this.props.onClick} activeClassName="active-link"
+                   to={this.props.linkAnchor}>{this.props.linkName || this.props.linkAnchor}</NavLink>;
 
         return (
             <Row center="xs" className="link">
                 <Col>
-                    {_link}<br/>
-                    {this.props.isActive && <ActiveUnderline/>}
+                    {_link}
                 </Col>
             </Row>
         );
