@@ -1,15 +1,17 @@
 import React, {Component} from "react";
 import Graphic from "./Graphic";
-import {Row, Col} from "react-flexbox-grid";
+import {Col, Row} from "react-flexbox-grid";
 import PropTypes from "prop-types";
 
 
 class PhotoGrid extends Component {
 
     getCol(position) {
+        let _photo = this.props.photos[position];
         return (
-            <Col md>
-                <Graphic imageSrc={this.props.photos[position].image}/>
+            <Col md className="grid-item">
+                <Graphic imageSrc={_photo.image}/>
+                <h5 className="image-title">{_photo.title}</h5>
             </Col>
         )
     }

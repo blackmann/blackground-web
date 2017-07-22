@@ -45,7 +45,7 @@ class MobileMenu extends Component {
                     {MobileMenu.getRow(<Link onClick={this.props.toggleMenu} linkAnchor="/about" linkName="About"/>)}
                     {MobileMenu.getRow(<Link onClick={this.props.toggleMenu} linkAnchor="/logos" linkName="Logos"/>)}
                     {MobileMenu.getRow(<Link onClick={this.props.toggleMenu} linkAnchor="/graphics" linkName="Graphics"/>)}
-                    {MobileMenu.getRow(<Link onClick={this.props.toggleMenu} linkAnchor="/hire" linkName="Hire us"/>)}
+                    {MobileMenu.getRow(<a href="mailto:yarteydegreat2@gmail.com">Hire us</a>)}
 
                     <div className="social-icons-container">
                         <Row>

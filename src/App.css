@@ -168,6 +168,36 @@ a:hover {
   border-bottom-color: #1bbc9b;
 }
 
+
+.grid-item{
+  border: 1px solid darkgray;
+  margin: 0.5em;
+  border-radius: 2px;
+}
+
+.image-title {
+  line-height: 0em;
+  margin-left: 0.5em;
+}
+
+.blink {
+  animation: alternate Blinking;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes Blinking {
+  from {
+    opacity: 0.4;
+    color: #333333;
+  }
+
+  to {
+    opacity: 1;
+    color: black;
+  }
+}
+
 @media (max-width: 750px) {
   .navigation {
     display: none;
